@@ -71,7 +71,8 @@ public class FragmentListado extends Fragment {
             TextView lblDe = (TextView) item.findViewById(R.id.lblDe);
             lblDe.setText(datos[position].getDe());
             TextView lblAsunto = (TextView)item.findViewById(R.id.lblAsunto);
-            lblAsunto.setText(datos[position].getAsunto());return (item);
+            lblAsunto.setText(datos[position].getAsunto());
+            return (item);
         }
     }
 
