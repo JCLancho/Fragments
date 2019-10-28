@@ -20,6 +20,6 @@ public class DetalleActivity extends AppCompatActivity {
         Log.i("AAA: ",getIntent().getClass().toString());
 
         //fin mensajes al log
-        detalle.mostrarDetalle(getIntent().getStringExtra(EXTRA_TEXTO));
+       detalle.mostrarDetalle(getIntent().getIntExtra("imagen", R.drawable.cartel5));
     }
 }

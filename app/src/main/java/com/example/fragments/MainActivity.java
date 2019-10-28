@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity implements CorreoListener {
+public class MainActivity extends AppCompatActivity implements CarreraListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,14 +15,14 @@ public class MainActivity extends AppCompatActivity implements CorreoListener {
     }
 
     @Override
-    public void onCorreoSeleccionado(Correo c) {
+    public void onCarreraSeleccionado(Carrera carrera) {
         boolean hayDetalle =(getSupportFragmentManager().findFragmentById(R.id.frgDetalle)!= null);
         if (hayDetalle) {
             ((FragmentDetalle)getSupportFragmentManager()
-                    .findFragmentById(R.id.frgDetalle)).mostrarDetalle(c.getTexto());
+                    .findFragmentById(R.id.frgDetalle)).mostrarDetalle(carrera.getCartel());
         }else {
             Intent i = new Intent(this, DetalleActivity.class);
-            i.putExtra(DetalleActivity.EXTRA_TEXTO, c.getTexto());
+            i.putExtra(DetalleActivity.EXTRA_TEXTO, carrera.getEdicion());
             startActivity(i);
         }
     }

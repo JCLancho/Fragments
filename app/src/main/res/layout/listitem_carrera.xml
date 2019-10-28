@@ -6,16 +6,10 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/lblDe"
+        android:id="@+id/lblEdicion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:textSize="20sp"/>
 
-    <TextView
-        android:id="@+id/lblAsunto"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textStyle="normal"
-        android:text="12sp"/>
 </LinearLayout>

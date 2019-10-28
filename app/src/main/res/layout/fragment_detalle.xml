@@ -6,10 +6,9 @@
     android:layout_height="match_parent"
     android:background="#FFBBBBBB">
 
-    <TextView
-        android:id="@+id/txtDetalle"
+    <ImageView
+        android:id="@+id/imgDetalle"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="25sp"
-        android:textStyle="bold"/>
+        android:layout_height="wrap_content" />
+
 </LinearLayout>
